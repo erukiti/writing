@@ -1,0 +1,32 @@
+{
+  "name": "writing",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/scripts/test-ts.js"
+    },
+    "testMatch": [
+      "**/*.test.(ts|tsx|js)"
+    ]
+  },
+  "dependencies": {
+    "jest": "^22.0.4",
+    "sha256": "^0.2.0",
+    "typescript": "^2.6.2",
+    "uuid-v4": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.0.0",
+    "@types/node": "^8.5.2"
+  }
+}
